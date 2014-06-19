@@ -1,6 +1,6 @@
 {
-  "name": "bumstack",
-  "description": "Yii Bumstack handler",
+  "name": "Yii-Bum-Stack",
+  "description": "Front End Stack for Backbone and Marionette development with Yii. Uses grunt for modularity instead of requirejs.",
   "version": "0.0.1-beta",
   "homepage": "http://thefundraiserexpress.com",
   "build_target": {
