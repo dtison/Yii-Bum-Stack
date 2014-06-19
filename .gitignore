@@ -1,0 +1,12 @@
+*.log
+.DS_Store
+.idea
+rsync.json
+public_html/assets
+public_html/debug
+public_html/js
+public_html/images
+HTMLfrag
+bower_components
+node_modules
+_build

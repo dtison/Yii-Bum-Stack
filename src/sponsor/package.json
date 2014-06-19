@@ -1,0 +1,26 @@
+{
+  "name": "sponsor",
+  "description": "sponsor App",
+  "version": "0.2.0-beta",
+  "homepage": "http://thefundraiserexpress.com",
+  "build_target": {
+    "path": "../../public_html/js/sponsor",
+    "name": "main"
+  },
+  "author": "Gravity Neutral",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "scripts": {
+    "test": "grunt nodeunit"
+  },
+  "devDependencies": {
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-exec": "~0.4.5",
+    "grunt": "~0.4.5",
+    "grunt-bumtemp": "~0.1.3"
+  },
+  "srcDependencies": {}
+}

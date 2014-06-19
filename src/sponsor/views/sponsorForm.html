@@ -1,0 +1,162 @@
+
+    <style>
+        fieldset {
+            text-transform:uppercase;
+            color:#ccc;
+            text-shadow: 1px 1px 0 #fff;
+            padding: 1em 0;
+            font-weight:bold
+        }
+        .help-block {
+            font-style:italic;
+            margin-left:0.6em;
+            border-radius:8px;
+            -moz-border-radius:8px;
+            -webkit-border-radius:8px;
+            padding:8px;
+            font-size:90%;
+        }
+        #addBusiness i {
+            margin-right:8px;
+        }
+        .panel > .panel-heading a,
+        .panel > .panel-heading a:hover,
+        .panel > .panel-heading a:visited
+        {
+            color:white;
+        }
+    </style>
+
+    <section id="addBusiness">
+        <header><h2>Add a New Sponsor</h2></header>
+        <div id="notifications"></div>
+        <hr/>
+        <div class="clearfix"></div>
+        <form class="col-sm-8 well">
+            <fieldset><i class="fa fa-pencil"> </i>Business Information:</fieldset>
+            <span class="help-block alert alert-info"><i class="fa fa-info-circle"></i>Use the <span class="label label-info">Tab</span> Key to go to next field, or <span class="label label-info">Shift+Tab</span> to go to previous field.</span>
+            <!-- businessName -->
+            <div class="row">
+                <div class="form-group col-xs-6">
+                    <label for="businessName">Company Name:</label>
+                    <input required class="form-control" type="text" id="businessName" name="businessName">
+                </div>
+                <!-- businessPhone -->
+                <div class="form-group col-xs-6">
+                    <label for="businessPhone">Phone Number</label>
+                    <input required class="form-control" type="text" id="businessPhone" name="businessPhone">
+                </div>
+            </div>
+            <hr/>
+            <fieldset><i class="fa fa-pencil"> </i>Location:</fieldset>
+            <div class="row">
+                <!-- businessAddress -->
+                <div class="form-group col-sm-4">
+                    <input required placeholder="Address" class="form-control" type="text" id="businessAddress" name="businessAddress">
+                    <span class="help-block">Full Address (eg 123 Main St #10)</span>
+                </div>
+                <!-- businessCity -->
+                <div class="form-group col-sm-4">
+                    <input required placeholder="City" class="form-control" type="text" id="businessCity" name="businessCity">
+                    <span class="help-block">City</span>
+                </div>
+                <!-- businessState -->
+                <div class="form-group col-xs-6 col-sm-2">
+                    <input required maxlength="2" placeholder="State" class="form-control" type="text" id="businessState" name="businessState">
+                    <span class="help-block">State Abbreviation</span>
+
+                </div>
+                <!-- businessZip -->
+                <div class="form-group col-xs-6 col-sm-2">
+                    <input required maxlength="11" placeholder="Zip" class="form-control" type="text" id="businessZip" name="businessZip">
+                    <span class="help-block">Zip</span>
+                </div>
+            </div>
+            <hr/>
+            <fieldset><i class="fa fa-pencil"> </i>Voucher Info</fieldset>
+            <!-- voucherName -->
+            <div class="form-group">
+                <label for="voucherName">Voucher Title</label>
+                <input required class="form-control" type="text" id="voucherName" name="voucherName">
+            </div>
+            <!-- voucherDescription -->
+            <div class="form-group">
+                <label for="voucherDescription" name="voucherDescription">Voucher Description</label>
+                <textarea rows="6" class="form-control" id="voucherDescription" name="voucherDescription"></textarea>
+
+            </div>
+        </form>
+        <div class="col-sm-4">
+            <div class="panel panel-danger">
+                <header class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-cog"> </i>Status:</h3>
+                </header>
+                <div class="panel-body">
+                    <p>Unsaved Data!</p>
+                </div>
+                <footer class="panel-footer">
+                    <button  class="btn btn-primary save-sponsor"><i class="fa fa-cloud-upload"></i>Save</button>
+                </footer>
+            </div>
+            <div class="panel panel-primary" >
+                <a class="panel-primary" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne">
+                    <header class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-pencil"> </i>Logo:<b class="pull-right caret"></b></h3>
+                    </header>
+                </a>
+                <div id="collapseOne" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="thumbnail">
+                            <img src="//placehold.it/640x480" style="max-width:100%"/>
+                        </div>
+                    </div>
+                </div>
+                <footer class="panel-footer">
+                    <button id="uploadLogoImage" class="btn btn-primary"><i class="fa fa-file-picture-o"></i>Upload Logo</button>
+                </footer>
+            </div>
+            <div class="panel panel-primary">
+                <a class="panel-primary" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+                    <header class="panel-heading">
+                        <h3 class="panel-title"><i class="fa fa-pencil"> </i>Voucher Image:<b class="pull-right caret"></b></h3>
+                    </header>
+                </a>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <div class="thumbnail">
+                            <img src="//placehold.it/640x480" style="max-width:100%"/>
+                        </div>
+                    </div>
+                </div>
+                <footer class="panel-footer">
+                    <button id="uploadVoucherImage" class="btn btn-primary"><i class="fa fa-file-picture-o"></i>Upload Voucher Image</button>
+                </footer>
+            </div>
+
+            <div class="panel panel-info">
+                <header class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-info"></i> Info:</h3>
+                </header>
+                <div class="panel-body">
+                    <table class="table table-hover">
+                        <tbody>
+                        <tr><td><b>Name:</b></td><td id="show_businessName"></td></tr>
+                        <tr><td><b>Phone:</b></td><td id="show_businessPhone"></td></tr>
+                        <tr><td><b>Address:</b></td><td id="show_businessAddress"></td></tr>
+                        <tr><td><b>City:</b></td><td id="show_businessCity"></td></tr>
+                        <tr><td><b>State:</b></td><td id="show_businessState"></td></tr>
+                        <tr><td><b>Zip:</b></td><td id="show_businessZip"></td></tr>
+                        <tr><td><b>Voucher:</b></td><td id="show_voucherName"></td></tr>
+                        <tr><td><b>Description:</b></td><td id="show_voucherDescription"></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <footer class="panel-footer">
+                    <button class="btn btn-primary save-sponsor"><i class="fa fa-cloud-upload"></i> Save</button>
+                </footer>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+
+        <footer>Thank you.</footer>
+    </section>
