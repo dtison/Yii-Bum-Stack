@@ -1,0 +1,18 @@
+{
+    "name": "bumstack",
+    "description": "Yii Bumstack handler",
+    "version": "0.0.1-beta",
+    "homepage": "http://thefundraiserexpress.com",
+    "build_target": {
+        "path": "../../public_html/js/sponsor",
+        "name": "main"
+    },
+    "author": "Gravity Neutral",
+    "engines": {
+        "node": ">= 0.10.0"
+    },
+    "devDependencies": {
+        "grunt-load-gruntfile": "~0.0.2",
+        "grunt": "~0.4.5"
+    }
+}
