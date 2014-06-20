@@ -5,7 +5,7 @@
 Bum - a nickname and acronym: Backbone, Underscore and Marionette.
 
 ## Getting Started
-This package requires NodeJS, Bower, and Grunt.
+This package requires Yii, NodeJS, Bower, and Grunt.
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this package with this command:
 
@@ -13,6 +13,7 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 git clone https://github.com/dtison/Yii-Bum-Stack.git
 ```
 
+#### Dependencies:
 Once the package has been installed, you must get dependencies from your site root:
 
 
@@ -23,7 +24,7 @@ Bower - manages retrieval and storage of all the js libraries used.
 
 npm install . --save-dev
 ```
-
+#### Example
 Then to run the example, cd src/sponsor
 
 ```shell
@@ -35,8 +36,9 @@ grunt
 Should load all the packages needed.
 
 
-Next you set up for staging server uploads in rsync.json:
+#### Using grunt watch
 
+This package comes with an advanced `grunt-watch` feature that allows you to sync with your developement stage or production.  To use, create an rsync.json file and put it in your root directory:
 ```json
 {
     "options": "-rvp --progress -a --delete -e 'ssh -q' --include '*.' ",
@@ -46,26 +48,26 @@ Next you set up for staging server uploads in rsync.json:
 }
 ```
 
-Then:
+#### Building from source
+
 
 ```shell
 grunt build
 
 ```
+Will concantenate your source files and produce one file in /public_html/js
 
 Should say:
 
 Done, without errors.
 
-The directories:
+When using Yii, it is important to make sure the following directories have 777 permissions:
 
 * public_html/assets
 * public_html/debug
 * public_html/protected/runtime
 
-Must all be set to 777 permissions.
-
-.htaccess must be in public_html on the server.  If you don't have one working with Yii, this one works
+.htaccess must be in public_html on the server.  If you don't have one working with Yii, this one works:
 
 ```apache
 
