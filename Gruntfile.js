@@ -1,8 +1,11 @@
 module.exports = function(grunt) {
-    'use strict';
+
 
     require("grunt-load-gruntfile")(grunt);
 
-    grunt.loadGruntfile("./src/sponsor/Gruntfile.js");
+    var dir;
+
+    process.chdir('./src/sponsor');
+    require(process.cwd() + "/Gruntfile.js")(grunt);
 
 };
