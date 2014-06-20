@@ -7,8 +7,33 @@ Bum - a nickname and acronym: Backbone, Underscore and Marionette.
 ## Getting Started
 This package requires Yii, NodeJS, Bower, and Grunt.
 
-If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this package with this command:
+If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. 
 
+### Overview
+
+The following guide aims to explain how to scaffold your project to work with Yii-Bum-Stack.
+
+#### Quick Start:
+
+Clone into your project directory:
+```shell
+git clone https://github.com/dtison/Yii-Bum-Stack.git
+```
+Install vendor Dependencies:
+```
+bower install
+```
+Install grunt Dependencies:
+```
+npm install . --save dev
+```
+> Alternatively, you may use `grunt<enter>` to run bower and npm install.
+
+Additional set up is required, see [Defaults][/#Defaults]
+
+### In-depth setup:
+
+Clone into your project directory:
 ```shell
 git clone https://github.com/dtison/Yii-Bum-Stack.git
 ```
@@ -50,11 +75,10 @@ This package comes with an advanced `grunt-watch` feature that allows you to syn
 
 #### Building from source
 
-
 ```shell
 grunt build
-
 ```
+
 Will concantenate your source files and produce one file in /public_html/js
 
 Should say: `Done, without errors.`
@@ -89,9 +113,6 @@ php_value post_max_size 80M
 ~  
 
 
-### Overview
-
-TBD
 
 ### Usage Example
 
