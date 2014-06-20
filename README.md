@@ -41,4 +41,4 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 0.0.1 : First Release
 
 ## License
-Copyright (c) 2014 Matt McFarland & David Ison. Licensed under the MIT license.
+Copyright (c) 2014 Gravityneutral.com Matt McFarland & David Ison. Licensed under the MIT license.
