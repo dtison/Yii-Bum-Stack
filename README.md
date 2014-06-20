@@ -67,8 +67,8 @@ Must all be set to 777 permissions.
 
 .htaccess must be in public_html on the server.  If you don't have one working with Yii, this one works
 
-```shell
-grunt build
+```apache
+
 RewriteEngine On
 
 # If a directory or a file exists, use it directly.
