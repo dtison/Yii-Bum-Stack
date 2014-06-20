@@ -64,6 +64,8 @@ Must all be set to 777 permissions.
 
 .htaccess must be in public_html on the server.  If you don't have one working with Yii, this one works
 
+```shell
+grunt build
 RewriteEngine On
 
 # If a directory or a file exists, use it directly.
@@ -75,6 +77,8 @@ RewriteRule . index.php
 
 php_value upload_max_filesize 80M
 php_value post_max_size 80M
+
+```
 
 
 ~  
