@@ -11,7 +11,7 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 
 ### Overview
 
-The following guide aims to explain how to scaffold your project to work with Yii-Bum-Stack.  Two guides available: [Quick Start](#quick-start), [In-depth setup](#in-depth-setup]
+The following guide aims to explain how to scaffold your project to work with Yii-Bum-Stack.  Two guides available: [Quick Start](#quick-start), [In-depth setup](#in-depth-setup)
 
 #### Quick Start:
 
