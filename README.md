@@ -57,9 +57,9 @@ grunt build
 ```
 Will concantenate your source files and produce one file in /public_html/js
 
-Should say:
+Should say: `Done, without errors.`
 
-Done, without errors.
+### Defaults
 
 When using Yii, it is important to make sure the following directories have 777 permissions:
 
