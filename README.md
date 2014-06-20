@@ -17,12 +17,12 @@ git clone https://github.com/dtison/Yii-Bum-Stack.git
 Once the package has been installed, you must get dependencies from your site root:
 
 
-```shell
-bower install
+* `bower install`
 
-Bower - manages retrieval and storage of all the js libraries used.
+> Bower - manages retrieval and storage of all the js libraries used.
 
-npm install . --save-dev
+* `npm install . --save-dev`
+ 
 ```
 #### Example
 Then to run the example, cd src/sponsor
