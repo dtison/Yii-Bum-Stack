@@ -1,5 +1,5 @@
 {
-    "name"              : "FRE-Dashboard",
+    "name"              : "Dashboard",
     "dependencies"      : {
         "marionette"    : "~1.8.8",
         "requirejs"     : "~2.1.14",

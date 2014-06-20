@@ -128,6 +128,7 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 
 ## Release History
 
+0.0.2 : Fixes README, other details
 0.0.1 : First Release
 
 ## License

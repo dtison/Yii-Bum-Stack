@@ -2,7 +2,7 @@
   "name": "Yii-Bum-Stack",
   "description": "Front End Stack for Backbone and Marionette development with Yii. Uses grunt for modularity instead of requirejs.",
   "version": "0.0.1-beta",
-  "homepage": "http://thefundraiserexpress.com",
+  "homepage": "https://github.com/dtison/Yii-Bum-Stack",
   "build_target": {
     "path": "../../public_html/js/sponsor",
     "name": "main"
