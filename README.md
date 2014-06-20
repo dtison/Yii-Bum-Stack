@@ -29,7 +29,7 @@ npm install . --save dev
 ```
 > Alternatively, you may use `grunt<enter>` to run bower and npm install.
 
-Additional set up is required, see [Defaults][/#Defaults]
+Additional set up is required, see [Defaults][#Defaults]
 
 ### In-depth setup:
 
