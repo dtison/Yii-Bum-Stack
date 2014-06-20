@@ -24,6 +24,8 @@ Once the package has been installed, you must get dependencies from your site ro
 * `npm install . --save-dev`
  
 ```
+
+
 #### Example
 Then to run the example, cd src/sponsor
 
