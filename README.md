@@ -13,13 +13,72 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 git clone https://github.com/dtison/Yii-Bum-Stack.git
 ```
 
-Once the package has been installed, you must get dependencies like so:
+Once the package has been installed, you must get dependencies from your site root:
 
 
 ```shell
 bower install
+
+Bower - manages retrieval and storage of all the js libraries used.
+
 npm install . --save-dev
 ```
+
+Then to run the example, cd src/sponsor
+
+```shell
+cd src/sponsor
+grunt
+
+```
+
+Should load all the packages needed.
+
+
+Next you set up for staging server uploads in rsync.json:
+
+{
+    "options": "-rvp --progress -a --delete -e 'ssh -q' --include '*.' ",
+    "user": "username",
+    "host": "hostname.com",
+    "path": "/directory/to/public_html"
+}
+
+
+```shell
+grunt build
+
+```
+
+Should say:
+
+Done, without errors.
+
+The directories:
+
+public_html/assets
+public_html/debug
+public_html/protected/runtime
+
+Must all be set to 777 permissions.
+
+.htaccess must be in public_html on the server.  If you don't have one working with Yii, this one works
+
+RewriteEngine On
+
+# If a directory or a file exists, use it directly.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Else, forward it to index.php.
+RewriteRule . index.php
+
+php_value upload_max_filesize 80M
+php_value post_max_size 80M
+
+
+~  
+
 
 ### Overview
 
