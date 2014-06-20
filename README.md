@@ -2,6 +2,8 @@
 
 > Front End Stack for Backbone and Marionette development with Yii. Uses grunt for modularity instead of requirejs.
 
+Bum - a nickname and acronym: Backbone, Underscore and Marionette.
+
 ## Getting Started
 This package requires NodeJS, Bower, and Grunt.
 
@@ -39,4 +41,4 @@ In lieu of a formal styleguide, take care to maintain the existing coding style.
 0.0.1 : First Release
 
 ## License
-Copyright (c) 2014 Matt McFarland & David Ison. Licensed under the MIT license.
+Copyright (c) 2014 Gravityneutral.com Matt McFarland & David Ison. Licensed under the MIT license.
