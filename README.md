@@ -59,9 +59,9 @@ Done, without errors.
 
 The directories:
 
-public_html/assets
-public_html/debug
-public_html/protected/runtime
+* public_html/assets
+* public_html/debug
+* public_html/protected/runtime
 
 Must all be set to 777 permissions.
 
