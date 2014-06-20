@@ -37,13 +37,16 @@ Should load all the packages needed.
 
 Next you set up for staging server uploads in rsync.json:
 
+```json
 {
     "options": "-rvp --progress -a --delete -e 'ssh -q' --include '*.' ",
     "user": "username",
     "host": "hostname.com",
     "path": "/directory/to/public_html"
 }
+```
 
+Then:
 
 ```shell
 grunt build
