@@ -29,7 +29,7 @@ npm install . --save dev
 ```
 > Alternatively, you may use `grunt<enter>` to run bower and npm install.
 
-Additional set up is required, see [Defaults][#Defaults]
+Additional set up is required, see [Defaults](#Defaults)
 
 ### In-depth setup:
 
@@ -55,7 +55,6 @@ Then to run the example, cd src/sponsor
 ```shell
 cd src/sponsor
 grunt
-
 ```
 
 Should load all the packages needed.
